@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhay Kumar - 3D Generalist & Web Developer</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #1c1c1c; /* Dark background */
+            color: #eaeaea;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #2ecc71; /* Green header background */
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            transition: background 0.5s;
+        }
+        header.scrolled {
+            background: #27ae60; /* Darker green when scrolled */
+        }
+        nav ul {
+            padding: 0;
+            list-style: none;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding-top: 100px;
+        }
+        #showcase {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('showcase.jpg') no-repeat center center/cover;
+            color: #fff;
+            padding: 100px 0;
+            text-align: center;
+        }
+        #showcase h1 {
+            font-size: 50px;
+            margin: 0;
+            animation: fadeInDown 1s ease-out;
+        }
+        #showcase p {
+            font-size: 20px;
+            animation: fadeInUp 1s ease-out;
+        }
+        section {
+            padding: 20px 0;
+            border-bottom: 1px solid #444;
+            background: #2c2c2c;
+        }
+        section h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #2ecc71;
+        }
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .content div {
+            flex-basis: 45%;
+            background: #333;
+            margin: 10px 0;
+            padding: 20px;
+            box-shadow: 0 0 10px #111;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+        .content div:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #2ecc71; /* Green footer background */
+            color: white;
+            margin-top: 20px;
+        }
+        .contact-icons {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .contact-icons a {
+            display: inline-block;
+            margin: 0 15px;
+            transition: transform 0.3s ease;
+        }
+        .contact-icons a:hover {
+            transform: scale(1.1);
+        }
+        .contact-icons img {
+            width: 40px;
+            height: 40px;
+            vertical-align: middle;
+        }
+        .profile-image {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .profile-image img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid #3498db; /* Blue border */
+            transition: transform 0.3s ease;
+        }
+        .profile-image img:hover {
+            transform: scale(1.1);
+        }
+        @keyframes fadeInDown {
+            0% { opacity: 0; transform: translateY(-20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes fadeInUp {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <header id="header">
+        <h1>Abhay Kumar</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="showcase">
+        <div class="container">
+            <h1>Welcome to My Portfolio</h1>
+            <p>3D Generalist | Web Developer | DSA Enthusiast</p>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h1>About Me</h1>
+            <div class="profile-image">
+                <img src="abhay.png" alt="Abhay Kumar">
+            </div>
+            <div class="content">
+                <div>
+                    <p>Hello! I'm Abhay Kumar, a passionate 3D Generalist and Web Developer. I enjoy creating stunning 3D models and developing responsive, user-friendly websites. My journey in the tech world began with a deep interest in computer graphics, leading me to explore 3D modeling and animation. Over time, I expanded my skills into web development, learning how to build dynamic and interactive websites.</p>
+                    <p>I am currently a B.Tech 1st-year college student, and my branch is ECE (VLSI). I have a solid understanding of Data Structures and Algorithms (DSA) in C and C++, which helps me write efficient and optimized code. I'm always on the lookout for new challenges and opportunities to grow my skill set. In my free time, I love experimenting with new tools and technologies, staying up-to-date with industry trends, and contributing to open-source projects.</p>
+                    <p>In addition to my technical skills, I am also a strong communicator and collaborator, often working in team environments to bring projects to fruition. My goal is to leverage my diverse skill set to create innovative and impactful solutions in the tech industry.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h1>Projects</h1>
+            <div class="content">
+                <div>
+                    <h2>3D Animation Project</h2>
+                    <p>Developed a short animated film using Blender. The project involved creating 3D models, rigging, animation, and rendering. It showcased my ability to bring characters and scenes to life with attention to detail and realistic motion.</p>
+                </div>
+                <div>
+                    <h2>Responsive Portfolio Website</h2>
+                    <p>Designed and developed a personal portfolio website using HTML, CSS, and JavaScript. The site is fully responsive, ensuring a seamless experience across all devices. It features my projects, skills, and contact information, providing a professional online presence.</p>
+                </div>
+                <div>
+                    <h2>Data Structures and Algorithms Library</h2>
+                    <p>Created a library of data structures and algorithms in C++. This project helped me deepen my understanding of fundamental computer science concepts and improve my problem-solving skills. The library includes implementations of various algorithms, such as sorting, searching, and graph traversal.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h1>Skills</h1>
+            <div class="content">
+                <div>
+                    <h2>3D Modeling</h2>
+                    <p>Proficient in creating high-quality 3D models using Blender and Maya. Experienced in texturing, rigging, and animation to bring models to life.</p>
+                </div>
+                <div>
+                    <h2>Web Development</h2>
+                    <p>Skilled in HTML, CSS, JavaScript, and various frameworks such as React and Angular. Experienced in developing responsive and dynamic websites with a focus on user experience.</p>
+                </div>
+                <div>
+                    <h2>DSA in C/C++</h2>
+                    <p>Strong understanding of data structures and algorithms in C and C++. Capable of writing efficient code and solving complex problems. Familiar with common algorithms and their applications.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h1>Contact</h1>
+            <div class="content">
+                <div>
+                    <p>If you'd like to get in touch, feel free to reach out to me through the following channels:</p>
+                    <div class="contact-icons">
+                        <a href="mailto:abhayk7481@gmail.com"><img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.png" alt="Gmail"></a>
+                        <a href="https://www.linkedin.com/in/abhay-kumar-81b2a8288/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn"></a>
+                        <a href="https://www.instagram.com/abhay_kr.0705/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Abhay Kumar. All rights reserved.</p>
+    </footer>
+
+    <script>
+        window.addEventListener('scroll', function() {
+            const header = document.getElementById('header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>
